@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Pet Shop</title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+  <div id="wrap" class="hidden" style="display:none" data-init="true">
+    <div class="panel">
+      <div class="header">
+        <h1>🐾 Pet Shop</h1>
+        <button id="closeBtn">✕</button>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="animals">Animals</button>
+        <button class="tab" data-tab="control">Pet Control</button>
+        <button class="tab" data-tab="food">Food &amp; Drink</button>
+        <button class="tab" data-tab="health">Health</button>
+        <button class="tab" data-tab="owned">My Pets</button>
+      </div>
+
+      <div class="content">
+        <div id="tab-animals" class="tabview active"></div>
+        <div id="tab-food" class="tabview"></div>
+        <div id="tab-health" class="tabview"></div>
+        <div id="tab-owned" class="tabview"></div>
+        <div id="tab-control" class="tabview"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

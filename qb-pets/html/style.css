@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; font-family: ui-sans-serif, system-ui, Arial; }
+.hidden { display:none; }
+
+#wrap {
+  position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,.25);
+}
+.panel {
+  width: 900px; max-width: 95vw; background: #0b0f14; color: #e9eef6;
+  border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.4);
+  border: 1px solid #1d2733;
+}
+.header {
+  display:flex; align-items:center; justify-content: space-between;
+  padding: 14px 18px; border-bottom: 1px solid #1d2733; background: #0f1620;
+  border-top-left-radius:16px; border-top-right-radius:16px;
+}
+.header h1 { margin:0; font-size: 20px; letter-spacing:.5px;}
+.header button {
+  border:0; background:#17212b; color:#c6d4e3; padding:8px 12px; border-radius:10px; cursor:pointer;
+}
+.tabs { display:flex; gap:8px; padding: 12px 16px; background:#0f1620; border-bottom:1px solid #1d2733;}
+.tab {
+  border: 1px solid #243244; background:#111a24; color:#c6d4e3; padding:8px 12px; border-radius:999px; cursor:pointer; font-size:14px;
+}
+.tab.active { background:#1a2a3b; border-color:#315076; }
+
+.content { padding: 16px; }
+.tabview { display:none; }
+.tabview.active { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:12px; }
+
+.card {
+  background:#0f1620; border:1px solid #1d2733; border-radius:14px; padding:12px;
+}
+.card h3 { margin:0 0 6px 0; font-size:16px; }
+.card p { margin:0 0 12px 0; color:#a9b8c9; font-size:13px; min-height: 32px; }
+.card .row { display:flex; align-items:center; justify-content: space-between; gap:8px; }
+.btn {
+  border:0; background:#225bda; color:#fff; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600;
+}
+.price { color:#9cc2ff; font-weight:600; }
+.badge { padding:2px 8px; border-radius:999px; background:#16273a; color:#9cc2ff; font-size:12px; }
+.small { font-size:12px; color:#8aa1b6; }
+
+
+/* DRAGGABLE */
+.header { cursor: move; user-select: none; }
+.panel { position: fixed; left: 50%; top: 16%; transform: translate(-50%, 0); }
