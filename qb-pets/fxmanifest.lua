@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 name 'qb-pets'
-author 'you'
+author 'Braiden Marshall'
 description 'QBCore Pets & Pet Shop with NUI'
 version '1.0.0'
 
